@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Central de Vídeos — Termos e Privacidade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+  :root {{ color-scheme: light; }}
+  body {{ margin: 0; }}
+  /* Layout: uma coluna de leitura (~66ch), índice curto no topo, duas seções com âncoras #termos e #privacidade */
+  :root {
+    --bg: #f6f7f9; --surface: #ffffff; --fg: #1d2330; --muted: #5b6475; --rule: #dde2ea; --accent: #2457c5;
+    --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #12161d; --surface: #181d26; --fg: #e5e9f0; --muted: #9aa4b5; --rule: #2a3140; --accent: #7aa2ff; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg: #12161d; --surface: #181d26; --fg: #e5e9f0; --muted: #9aa4b5; --rule: #2a3140; --accent: #7aa2ff; color-scheme: dark; }
+
+  body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.65;
+         padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  main { max-width: 66ch; margin: 0 auto; padding-block: 48px 72px; display: grid; gap: 40px; }
+  header { display: grid; gap: 10px; }
+  .eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  h1, h2 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.2; }
+  h1 { font-size: clamp(28px, 5vw, 38px); font-weight: 650; }
+  h2 { font-size: 24px; font-weight: 650; }
+  h3 { font-size: 16px; margin: 0; }
+  p, ul { margin: 0; }
+  ul { padding-left: 1.2em; display: grid; gap: 6px; }
+  .meta { color: var(--muted); font-size: 14px; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 15px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  section { display: grid; gap: 16px; padding-top: 28px; border-top: 1px solid var(--rule); scroll-margin-top: 16px; }
+  .block { display: grid; gap: 8px; }
+  .note { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="eyebrow">Central de Vídeos · Vozes da Luta</span>
+    <h1>Termos de Uso e Política de Privacidade</h1>
+    <p class="meta">Vigente desde 4 de novembro de 2026.</p>
+    <nav aria-label="Seções">
+      <a href="#termos">Termos de Uso</a>
+      <a href="#privacidade">Política de Privacidade</a>
+    </nav>
+  </header>
+
+  <p class="note">A Central de Vídeos é uma ferramenta de uso interno, operada pela equipe do perfil
+    <strong>Vozes da Luta</strong>, para preparar e publicar os vídeos do próprio perfil no TikTok, YouTube,
+    Instagram e Facebook. Ela não é oferecida ao público e não cria contas para terceiros.</p>
+
+  <section id="termos" aria-labelledby="t-termos">
+    <h2 id="t-termos">Termos de Uso</h2>
+
+    <div class="block">
+      <h3>1. O que a ferramenta faz</h3>
+      <p>A Central de Vídeos organiza vídeos, títulos, legendas e hashtags e, depois da aprovação manual de uma pessoa
+        da equipe, envia o vídeo às redes sociais conectadas pelas APIs oficiais de cada plataforma.</p>
+    </div>
+
+    <div class="block">
+      <h3>2. Quem pode usar</h3>
+      <p>Somente a equipe responsável pelo perfil Vozes da Luta, com contas conectadas por ela mesma. Cada conexão é
+        autorizada pelo titular da conta na tela oficial da plataforma e pode ser revogada a qualquer momento.</p>
+    </div>
+
+    <div class="block">
+      <h3>3. Conteúdo publicado</h3>
+      <ul>
+        <li>Só é publicado conteúdo próprio ou com autorização registrada do autor.</li>
+        <li>Créditos exigidos pelo autor são mantidos no texto publicado.</li>
+        <li>Nada é publicado sem aprovação manual.</li>
+        <li>O conteúdo segue as regras e diretrizes de cada plataforma.</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>4. Limites</h3>
+      <p>A ferramenta não contorna autenticação, proteção de conteúdo ou restrições das plataformas, e respeita os
+        limites de uso de cada API. A disponibilidade depende das plataformas, que podem alterar ou suspender suas APIs.</p>
+    </div>
+
+    <div class="block">
+      <h3>5. Alterações</h3>
+      <p>Estes termos podem ser atualizados. A data de vigência no topo desta página indica a versão em vigor.</p>
+    </div>
+  </section>
+
+  <section id="privacidade" aria-labelledby="t-priv">
+    <h2 id="t-priv">Política de Privacidade</h2>
+
+    <div class="block">
+      <h3>1. Dados tratados</h3>
+      <ul>
+        <li>Dos perfis conectados: identificador da conta, nome de exibição e os tokens de acesso concedidos pelo titular.</li>
+        <li>Dos vídeos: arquivos, títulos, descrições, hashtags e o registro das publicações (data, rede e link).</li>
+      </ul>
+      <p>A ferramenta não coleta dados de seguidores, de espectadores nem de outros usuários das plataformas.</p>
+    </div>
+
+    <div class="block">
+      <h3>2. Para que os dados são usados</h3>
+      <p>Apenas para publicar os vídeos aprovados nos perfis do próprio titular e conferir o resultado da publicação.</p>
+    </div>
+
+    <div class="block">
+      <h3>3. Armazenamento e segurança</h3>
+      <p>Os dados ficam em um servidor da própria equipe. Tokens de acesso são guardados criptografados e nunca são
+        exibidos em registros. O painel de controle não é exposto à internet.</p>
+    </div>
+
+    <div class="block">
+      <h3>4. Compartilhamento</h3>
+      <p>Os dados não são vendidos nem compartilhados. Eles são enviados apenas à própria plataforma de destino
+        (TikTok, YouTube, Instagram ou Facebook) no momento da publicação.</p>
+    </div>
+
+    <div class="block">
+      <h3>5. Revogar o acesso e excluir dados</h3>
+      <p>O titular pode revogar o acesso a qualquer momento nas configurações de segurança de cada plataforma
+        (aplicativos conectados). Os tokens revogados deixam de funcionar e podem ser apagados da ferramenta a pedido.</p>
+    </div>
+
+    <div class="block">
+      <h3>6. Contato</h3>
+      <p>Dúvidas sobre estes termos ou sobre os dados: mensagem direta ao perfil <strong>@vozesdaluta</strong> no TikTok.</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>
